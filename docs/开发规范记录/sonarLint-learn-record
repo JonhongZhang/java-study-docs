@@ -1,0 +1,11 @@
+1. Unnecessary imports should be removed
+
+2. Utility classes should not have public constructors
+
+3. Make beanFactory a static final constant or non-public and provide accessors if needed.
+
+4. Methods should not be empty: 添加一个嵌套注释，解释为什么这个方法是空的，抛出一个UnsupportedOperationException或完成实现。
+
+5. Generic exceptions should never be thrown: 定义并抛出专用异常，而不是使用通用异常。
+
+6.
