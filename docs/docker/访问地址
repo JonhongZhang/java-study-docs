@@ -1,0 +1,8 @@
+查看端口：  netstat -tunlp | grep 8090
+
+
+查看默认密码：
+
+jvisualvm:  查看内存情况；
+
+MAT进行bump.jxop内存详情分析。
