@@ -1,0 +1,9 @@
+./nginx -c nginx.conf的文件。如果不指定，默认为NGINX_HOME/conf/nginx.conf
+./nginx -s stop 停止
+./nginx -s quit退出
+./nginx -s reload 重新加载nginx.conf
+
+
+ ps -ef | grep nginx 
+
+ 设置 Access-Control-Allow-Origin: *       # 可设置ip、域名；作用指定允许跨域的域名；
