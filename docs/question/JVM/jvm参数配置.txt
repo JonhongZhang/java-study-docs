@@ -1,0 +1,5 @@
+JAVA_OPTS="-Xms2048 -Xmx2048 -XX:MaxPermSize=512 -XX:MinPermSize=512 -XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=/applog/dump.hprof
+-Dcontainer.host=${HOSTNAME}
+-Dfile.encoding=UTF-8 -Duser.timezone=GMT+8"
+
