@@ -1,0 +1,33 @@
+
+docker run \
+    --detach \
+    --publish 8443:443 \
+    --publish 8090:80 \
+    --name gitlab \
+    --restart unless-stopped \
+    -v /mnt/gitlab/etc:/etc/gitlab \
+    -v /mnt/gitlab/log:/var/log/gitlab \
+    -v /mnt/gitlab/data:/var/opt/gitlab \
+    beginor/gitlab-ce:11.0.1-ce.0 
+
+运行docker容器
+查看默认密码：
+docker exec -it gitlib-compose_web_1 grep 'Password:' /etc/gitlab/initial_root_password
+cOU1moLje4nZVUVvTPSQvYOeo/nQkC+mStaUIusd3pA=
+
+cOU1moLje4nZVUVvTPSQvYOeo/nQkC+mStaUIusd3pA=
+
+
+!QAZ2wsx3
+gitlib-compose_web_1
+gitlab 优化
+
+egrep -v '^$|^#' gitlab.rb 
+gitlab_rails['time_zone'] = 'Asia/Shanghai'
+unicorn['worker_processes'] = 2
+unicorn['worker_memory_limit_min'] = "100 * 1 << 20"
+unicorn['worker_memory_limit_max'] = "250 * 1 << 20"
+sidekiq['concurrency'] = 8
+postgresql['shared_buffers'] = "128MB"
+postgresql['max_worker_processes'] = 4
+prometheus_monitoring['enable'] = false

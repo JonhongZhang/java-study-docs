@@ -1,0 +1,19 @@
+version: '3.6'
+services:
+  web:
+    image: 'gitlab-jh.tencentcloudcr.com/omnibus/gitlab-jh:latest'
+    restart: always
+    hostname: '101.43.66.119'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        GITLAB_ROOT_PASSWORD="!QAZ2wsx3"
+        external_url 'http://101.43.66.119:8929'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2224
+    ports:
+      - '8929:8929'
+      - '2224:22'
+    volumes:
+      - '$GITLAB_HOME/config:/etc/gitlab'
+      - '$GITLAB_HOME/logs:/var/log/gitlab'
+      - '$GITLAB_HOME/data:/var/opt/gitlab'
+    shm_size: '256m'
