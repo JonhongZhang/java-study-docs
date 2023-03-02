@@ -205,20 +205,14 @@ R
 "docs/tools/git/ssh-createconfig.md,7/2/720b02af889884158b6e4de72cd45422cbb6be69
 >
 docs/草稿.md,f/c/fcfc9122a59e8e8e1b34387c913eab9b9cf8ee6f
-]
--docs/响应式编程/响应式编程概念.md,1/3/13412f2944e87f91b1ca1a7bfae2f77d92b9e1ef
 d
 4docs/读书笔记/纯粹理性批判/读书笔记.md,8/4/84305a4b900fb430bd3487d1de628e951057a97f
 M
 docs/tools/git/git-command.md,7/c/7cf338fbc6f81a62bb44fcf5c418d7ba97233efa
-f
-6docs/封装信息/接口幂等性保证注解封装.md,4/5/45eba743d187df97b5156e0fb6f96961d2fc9dae
 W
 'docs/个人能力/个人能力需求.md,a/c/ac8ef2e98b55ea0468f46e4c67190ddc7975f6f3
 ]
 -docs/个人能力/浏览器调试小技能.md,9/6/9667846de9da6089b97071f0709735bb7ccdb8e7
-X
-(docs/封装信息/Redis-starter封装.md,4/2/423103c67a430eda6513b8c00e64f9b9adc32b41
 K
 docs/哲学/弗洛伊德.md,0/5/05bd8f038037a374ea05bb5f14e6a0d71faff507
 C
@@ -231,12 +225,6 @@ b
 2docs/springboot3更新/spring版本更替信息.md,3/c/3c03e969119ee50beab1b2a80dbfe09c7cd9e251
 ^
 .docs/springboot3更新/springboot4大神器.MD,4/e/4e250ae5de45e0d2256da579926d43a714e5b81a
-_
-/docs/后端面试38讲收获/daily-newspaper.sh,e/3/e33e760e06d63716945c3aece206bf7cea5ebd4c
-V
-&docs/后端面试38讲收获/杂记.md,7/5/752fe711ce4127539ef7f1a3657576c71b93a11e
-Z
-*docs/后端面试38讲收获/2023-01-20.md,8/7/8716a27de997c24fe5f653aa1904d1951117d4dc
 Y
 )docs/springboot3更新/响应式编程.md,6/0/60fa964a7501c12c3a19fa35f19bdd6ff93d5192
 ]
